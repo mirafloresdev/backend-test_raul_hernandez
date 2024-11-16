@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "SISA-TEST",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

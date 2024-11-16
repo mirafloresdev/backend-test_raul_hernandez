@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+  database:
+    image: postgres:13
+    container_name: postgres_sisa
+    environment:
+      POSTGRES_DB: inventario_db
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
